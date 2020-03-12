@@ -22,6 +22,8 @@
 
     </div>
     <input type="button" value="Finalize Line/Polyline" id="update">
+    <input type="button" value="Reset Current Polyline" id="reset">
+    <input type="button" value="Reset All Polyline" id="reset-all">
     <a href="https://github.com/randomize721/sig-1705551054" target="_blank"><button>Source Code</button></a>
 </body>
 <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
@@ -180,6 +182,33 @@
         });
     });
 
+    $('#reset').on('click', function () {
+        $.ajax({
+            url: "reset.php",
+            type: "GET",
+            data: {
+                what: 'current'
+            },
+            cache: false,
+            success: function (dataResult) {
+                location.reload();
+            }
+        });
+    });
+
+    $('#reset-all').on('click', function () {
+        $.ajax({
+            url: "reset.php",
+            type: "GET",
+            data: {
+                what: 'all'
+            },
+            cache: false,
+            success: function (dataResult) {
+                location.reload();
+            }
+        });
+    });
     <?php
         include 'view.php';
         include 'view_beta.php';
