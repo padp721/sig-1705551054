@@ -51,7 +51,7 @@
 
     var control = L.control.layers(null, null, { collapsed:true }).addTo(mymap);
 </script>
-<a href="https://github.com/Raruto/leaflet-kmz" class="view-on-github" style="position: fixed;top: 10px;left: calc(50% - 60px);z-index: 9999;"> <img alt="View on Github" src="5847f98fcef1014c0b5e48c0.png" title="View on Github"
+<a href="https://github.com/randomize721/sig-1705551054" class="view-on-github" style="position: fixed;top: 10px;left: calc(50% - 60px);z-index: 9999;" target="_blank"> <img alt="View on Github" src="5847f98fcef1014c0b5e48c0.png" title="View on Github"
 		  width="163"> </a>
 
 
