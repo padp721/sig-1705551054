@@ -38,7 +38,7 @@
     <script src="rainbowvis.js"></script>
     <script src="leaflet-omnivore.min.js"></script>
 <script>
-    var mymap = L.map('mapid').setView([-8.4, 115], 10);
+    var mymap = L.map('mapid').setView([-8.4, 115], 9);
     L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
         attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a> | I Putu Angga Darma Putra - 1705551054',
         maxZoom: 25,
@@ -191,7 +191,7 @@
 <a href="https://github.com/randomize721/sig-1705551054" class="view-on-github" style="position: fixed;top: 10px;left: calc(50% - 60px);z-index: 9999;" target="_blank"> <img alt="View on Github" src="5847f98fcef1014c0b5e48c0.png" title="View on Github"
 		  width="163"> </a>
 
-<div class="shadow card" style="position: fixed;top: 10px;left: calc(72% - 60px);z-index: 9999;">
+<div class="shadow card" style="position: fixed;top: 10px;left: calc(69% - 60px);z-index: 9999;">
   <div class="card-body">
   <b>Menampilkan Data Tanggal : <?php echo $result['tgl'];?></b>
     <a href="list_data.php" ><button type="button" class="btn btn-warning">Manage Data</button></a>
@@ -200,7 +200,7 @@
 
 
 
-<div class="shadow card" style="position: fixed;top: calc(86% - 45px); left: 10px;z-index: 9999;">
+<div class="shadow card" style="position: fixed;top: calc(84% - 45px); left: 10px;z-index: 9999;">
   <div class="card-header"><b>Tampilkan Per Tanggal - Klik Area untuk Melihat Detail</b></div>
   <div class="card-body">
     <form class="form-inline" action="#" method="post">
@@ -211,14 +211,14 @@
   </div>
 </div>
 
-<div class="shadow card" style="position: fixed;top: 15%; left: 10px;z-index: 9999; width:11%;">
+<div class="shadow card" style="position: fixed;top: 13%; left: 10px;z-index: 9999; width:11%;">
   <div class="card-header"><center><b>Kabupaten Lain</b></center></div>
   <div class="card-body">
     <center><h1><?php echo $result['kabupaten_lainnya']; ?></h1></center>
   </div>
 </div>
 
-<div class="shadow card" style="position: fixed;top: 40%; left: 10px;z-index: 9999; width:11%;">
+<div class="shadow card" style="position: fixed;top: 43%; left: 10px;z-index: 9999; width:11%;">
   <div class="card-header"><center><b>Warga Negara<br>Asing</b></center></div>
   <div class="card-body">
     <center><h1><?php echo $result['wna']; ?></h1></center>
