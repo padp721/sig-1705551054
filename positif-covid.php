@@ -116,7 +116,7 @@
             return { fillColor: new_warna.buleleng, fillOpacity: <?php echo $mycolor['opacity']; ?> , stroke:true, color:'black'};
         }
     });
-    var shape = omnivore.kml('kmls/BULELENG.kml',null,color).addTo(mymap);
+    var shape = omnivore.kml('kmls/buleleng.kml',null,color).addTo(mymap);
     shape.bindPopup(
         "<b>Buleleng</b><br>Jumlah Positif : <?php echo $result['buleleng']; ?>"
     );
